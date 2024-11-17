@@ -274,38 +274,38 @@
                         <form action="rsvp.php" method="POST">
                             <div class="form-row">
                                 <div class="form-group col-sm-6">
-                                    <input type="text" class="form-control bg-secondary border-0 py-4 px-3" placeholder="Your Name" required/>
+                                    <input type="text" class="form-control bg-secondary border-0 py-4 px-3" name="name" placeholder="Your Name" required />
                                 </div>
                                 <div class="form-group col-sm-6">
-                                    <input type="email" class="form-control bg-secondary border-0 py-4 px-3" placeholder="Your Email" required/>
+                                    <input type="email" class="form-control bg-secondary border-0 py-4 px-3" name="email" placeholder="Your Email" required />
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-sm-6">
-                                    <select class="form-control bg-secondary border-0" style="height: 52px;" required>
-                                        <option>Number of Guest</option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
+                                    <select class="form-control bg-secondary border-0" name="guests" style="height: 52px;" required>
+                                        <option value="">Number of Guests</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
                                     </select>
                                 </div>
                                 <div class="form-group col-sm-6">
-                                    <select class="form-control bg-secondary border-0" style="height: 52px;" required>
-                                        <option>I'm Attending</option>
-                                        <option>Church Ceremony Only</option>
-                                        <option>Reception Only</option>
-                                        <option>Both</option>
+                                    <select class="form-control bg-secondary border-0" name="attendance" style="height: 52px;" required>
+                                        <option value="">I'm Attending</option>
+                                        <option value="Church Ceremony Only">Church Ceremony Only</option>
+                                        <option value="Reception Only">Reception Only</option>
+                                        <option value="Both">Both</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control bg-secondary border-0 py-2 px-3" rows="5" placeholder="Any additional message or dietary restrictions?" required></textarea>
+                                <textarea class="form-control bg-secondary border-0 py-2 px-3" rows="5" name="message" placeholder="Any additional message or dietary restrictions?" required></textarea>
                             </div>
                             <div>
                                 <button class="btn btn-primary font-weight-bold py-3 px-5" type="submit">Submit</button>
                             </div>
-                        </form>
+                        </form>                        
                     </div>
                 </div>
             </div>
